@@ -1,0 +1,216 @@
+
+
+.header{
+   border-bottom: 1px solid rgba(12, 12, 12, 0.1);
+}
+
+.header-container {
+        max-width: 1280px;
+        padding: 0 15px;
+        margin: 0 auto;
+        padding: 26px 64.5px;
+        display: flex;
+        flex-wrap: nowrap;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 203px;
+    margin-right: 203px;
+}
+.nav-list { 
+    display: flex;
+    align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: row;
+        gap: 40px;
+}
+.logo {
+    font-family: "Gilroy", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: -0.02em;
+    color: #0c0c0c;}
+
+
+
+.nav-item:first-child {
+    position: relative;
+    padding-bottom: 10px;
+}
+.nav-item:first-child::after
+{
+    content: '';
+            position: absolute;
+            left: 40%;
+            bottom: -1px;
+            width: 8px;
+            height: 8px;
+            background-color: #3350E9;
+            border-radius: 50%;
+            margin-top: 5px;
+}
+
+.nav-list-item {
+    font-family: "Gilroy", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.28571;
+    text-align: center;
+    color: #0c0c0c;
+}
+
+
+.address-list {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.address-item {
+    border: 1px solid rgba(12, 12, 12, 0.1);
+        border-radius: 10px;
+        padding: 8px;
+        width: 36px;
+        height: 36px;
+        fill: #0c0c0c;
+        align-items: center;
+        justify-content: center;
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+background: linear-gradient(rgba(12, 12, 12, 0.92), rgba(12, 12, 12, 0.92)), url("../images/about-us/about-us-mob-2x.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+
+.mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+.modal-menu
+{
+    display: flex;
+    padding: 20px 20px 40px 20px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 100vh;
+
+}
+.modal-button-closewndw
+{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: transparent;
+    border: none;
+}
+.menu-list
+{
+    display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 24px;
+        font-weight: 500;
+            font-size: 14px;
+            line-height: 1.28571;
+            text-align: center;
+            color: #fbfbfb;
+            margin-top: 220px;
+}
+.menu-list-item:first-child
+{
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.menu-list-item:first-child::after
+{
+            content: '';
+            position: absolute;
+            left: 40%;
+            bottom:1px;
+            width: 8px;
+            height: 8px;
+            background-color: #3350E9;
+            border-radius: 50%;
+            margin-top: 5px;
+    
+}
+.menu-address
+{
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 8px;
+}
+.menu-address-item
+{
+    border: 1px solid rgba(251, 251, 251, 0.1);
+        border-radius: 10px;
+        padding: 8px;
+        width: 34px;
+        height: 34px;
+        fill: #fbfbfb;
+}
+.menu-address-item>a:active
+{
+ fill: #FBFBFB;
+}
+
+
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+    .header-container{
+        width: 335px;
+        padding: 20px;
+        
+
+    }
+   
+    .nav
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .burger-button
+    {
+        margin-left: auto;
+        margin-right: 24px;
+        fill: #212121;
+    }
+    .address-item
+    {
+        display: none;
+    }
+    .nav-list
+    {
+        display: none;
+    }
+
+}
+
+
+
+
+.hidden {
+    display: none;
+}
