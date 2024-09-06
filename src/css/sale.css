@@ -1,9 +1,8 @@
 .sale {
-  padding-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 .sale-title {
-  font-family: 'Gilroy', sans-serif;
   font-weight: 600;
   font-size: 32px;
   line-height: 1;
@@ -22,7 +21,7 @@
 .sale-list {
   display: flex;
   flex-direction: row;
-  /* overflow-x: scroll; */
+  overflow-x: auto;
   gap: 5px;
 }
 
@@ -30,11 +29,10 @@
   border: 1px solid rgba(12, 12, 12, 0.05);
   border-radius: 16px;
   background-color: #f3f3f3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80px;
-  height: 80px;
+  width: 100%;
+  max-width: 80px;
+  height: auto;
+  padding: 13px 14px;
 }
 
 .sale-img {
@@ -46,11 +44,10 @@
   border: 1px solid rgba(12, 12, 12, 0.05);
   border-radius: 30px;
   background-color: #f3f3f3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 335px;
-  height: 385px;
+  width: 100%;
+  max-width: 335px;
+  height: auto;
+  padding: 50px;
 }
 
 .sale-bigimg {
@@ -74,7 +71,6 @@
 }
 
 .sale-box-title {
-  font-family: 'Gilroy', sans-serif;
   font-weight: 600;
   font-size: 24px;
   line-height: 1.17;
@@ -84,7 +80,6 @@
 }
 
 .sale-text {
-  font-family: 'Gilroy', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.28;
@@ -100,7 +95,6 @@
 
 .sale-price {
   margin-right: 5px;
-  font-family: 'Gilroy', sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.25;
@@ -116,7 +110,6 @@
 }
 
 .sale-price-sub {
-  font-family: 'Gilroy', sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
@@ -126,7 +119,6 @@
 }
 
 .sale-box-text {
-  font-family: 'Gilroy', sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.28571;
@@ -141,8 +133,7 @@
   gap: 8px;
 }
 
-.sale-link {
-  font-family: 'Gilroy', sans-serif;
+.sale-tag-text {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.33;
@@ -160,7 +151,7 @@
   }
 
   .sale {
-    padding-bottom: 80px;
+    margin-bottom: 80px;
   }
 
   .sale-title {
@@ -178,24 +169,19 @@
   .sale-list {
     flex-direction: column;
     gap: 10px;
+    overflow-x: hidden;
   }
 
   .sale-items {
     border-radius: 20px;
-    width: 132px;
-    height: 132px;
+    max-width: 132px;
+    padding: 16px 18px;
   }
 
   .sale-picture {
     border-radius: 50px;
-  }
-
-  .sale-picture {
-    width: 552px;
-    height: 558px;
-  }
-  .sale-bigimg {
-    width: 100%;
+    max-width: 552px;
+    padding: 80px 112px;
   }
 
   .sale-box {
@@ -250,7 +236,7 @@
   }
 
   .sale {
-    padding-bottom: 100px;
+    margin-bottom: 100px;
   }
 
   .sale-wrapper {
@@ -264,7 +250,8 @@
   }
 
   .sale-picture {
-    width: 428px;
+    max-width: 428px;
+    padding: 80px 50px;
     margin-right: 40px;
   }
 
