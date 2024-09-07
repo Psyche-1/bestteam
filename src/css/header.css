@@ -1,40 +1,41 @@
-
-
-.header{
+.header {
     border-bottom: 1px solid rgba(12, 12, 12, 0.1);
     padding: 20px 0;
 }
+
 .header-container.container
 {
     padding: 0 20px;
     
 }
-.nav
-{
+
+.nav {
+
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.burger-button
-{
+
+.burger-button {
     width: 34px;
     height: 34px;
    
 }
+
 .mobile-menu {
     position: fixed;
     top: 0;
     right: 0;
     width: 100%;
     height: 100%;
-background: linear-gradient(rgba(12, 12, 12, 0.92), rgba(12, 12, 12, 0.92)), url("../images/about-us/about-us-mob-2x.jpg");
+    background: linear-gradient(rgba(12, 12, 12, 0.92), rgba(12, 12, 12, 0.92)), url("../images/about-us/about-us-mob-2x.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-  }
+}
 
 
 .mobile-menu.is-open {
@@ -42,18 +43,18 @@ background: linear-gradient(rgba(12, 12, 12, 0.92), rgba(12, 12, 12, 0.92)), url
     visibility: visible;
     pointer-events: auto;
 }
-.modal-menu
-{
+
+.modal-menu {
     display: flex;
     padding: 20px 20px 40px 20px;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
 
 }
-.modal-button-closewndw
-{
+
+.modal-button-closewndw {
     position: absolute;
     right: 20px;
     top: 20px;
@@ -62,26 +63,27 @@ background: linear-gradient(rgba(12, 12, 12, 0.92), rgba(12, 12, 12, 0.92)), url
     background-color: transparent;
     border: none;
 }
-.menu-list
-{
+
+.menu-list {
     display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        flex-direction: column;
-        gap: 24px;
-        font-weight: 500;
-            font-size: 14px;
-            line-height: 1.28571;
-            text-align: center;
-            color: #fbfbfb;
-            margin-top: 220px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 24px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.28571;
+    text-align: center;
+    color: #fbfbfb;
+    margin-top: 220px;
 }
-.menu-list-item:first-child
-{
+
+.menu-list-item:first-child {
     position: relative;
     padding-bottom: 10px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .modal-button-closewndw-svg
 {
     stroke: white;
@@ -98,16 +100,16 @@ background: linear-gradient(rgba(12, 12, 12, 0.92), rgba(12, 12, 12, 0.92)), url
             border-radius: 50%;
             margin-top: 5px; 
 }
-.menu-address
-{
+
+.menu-address {
     display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: row;
-        gap: 8px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 8px;
 }
-.menu-address-item
-{
+
+.menu-address-item {
     border: 1px solid rgba(251, 251, 251, 0.1);
         border-radius: 10px;
         padding: 8px;
@@ -144,17 +146,36 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: #0c0c0c;
     width: 34px;
     height: 34px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+    padding: 8px;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.menu-address-item>a {
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-address-item>a:active {
+    fill: #FBFBFB;
 }
 
 
 @media screen and (max-width: 767px) {
 
-.address-list,
+    .address-list,
     .nav-list {
         display: none;
 
     }
 }
+
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   
     .modal-button-closewndw .modal-button-closewndw-svg
