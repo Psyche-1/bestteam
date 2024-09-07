@@ -55,7 +55,6 @@
 @media only screen and (min-width: 768px) {
     .hero {
         padding-top: 80px;
-        padding-bottom: 80px;
         /* margin-top: 80px;
         margin-bottom: 80px; */
     }
@@ -95,10 +94,6 @@
 }
 
 @media only screen and (min-width: 1280px) {
-    .hero {
-        padding-bottom: 100px;
-    }
-
     .hero-box-text {
         width: 597px;
     }
