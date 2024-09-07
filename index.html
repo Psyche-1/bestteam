@@ -1,20 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/bestteam/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WatchCharm</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
+    <script type="module" crossorigin src="/bestteam/index.js"></script>
+    <link rel="stylesheet" crossorigin href="/bestteam/assets/index-DyZ7VNGL.css">
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/bestteam/favicon.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WatchCharm</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css">
-  <script type="module" crossorigin src="/bestteam/index.js"></script>
-  <link rel="stylesheet" crossorigin href="/bestteam/assets/index-ChFy8wwC.css">
-</head>
+  <body>
+    
 
-<body>
-  
-  <main>
-    <section class="hero">
+<header class="header">
+  <div class="header-container container">
+    <nav class="nav">
+ <a href="" class="logo">watchcharm</a>
+ <ul class="nav-list">
+  <!-- nav-list -->
+
+  <li class="nav-item">
+    <a href="./index.html" class="nav-list-item">Home </a>
+  </li>
+  <li class="nav-item">
+    <a href="#about-us" class="nav-list-item">About Us</a>
+  </li>
+  <li class="nav-item"><a href="#catalog" class="nav-list-item">Catalog</a></li>
+  <li class="nav-item"><a href="#sale" class="nav-list-item">Sale</a></li>
+  <li class="nav-item"><a href="#reviews" class="nav-list-item">Reviews</a></li>
+  <li class="nav-item">
+    <a href="#contact-us" class="nav-list-item">Contact Us</a>
+  </li>
+</ul>
+     <svg width="28" height="14" class="burger-button"></svg>
+        <use href="/bestteam/assets/sprite-Bjw56faa.svg#icon-burger"> </use>
+      </svg>
+    </nav>
+    
+    
+<!-- address -->
+<address class="address">
+ <ul class="address-list">
+        <li class="address-item"><a href="https://www.facebook.com/goITclub/" class="address-link"><svg height="20" width="20" class="header-sprite"></svg>
+            <use href="/bestteam/assets/sprite-Bjw56faa.svg#icon-facebook"></use>
+          </svg></a>
+        </li>
+        <li class="address-item">
+          <a href="https://www.instagram.com/goitclub/" class="address-link"><svg height="20" width="20" class="header-sprite"></svg>
+            <use href="/bestteam/assets/sprite-Bjw56faa.svg#icon-instagram"></use>
+          </svg></a>
+        </li>
+        <li class="address-item">
+          <a href="https://www.youtube.com/c/GoIT" class="address-link"><svg height="20" width="20" class="header-sprite"></svg>
+            <use href="/bestteam/assets/sprite-Bjw56faa.svg#icon-youTube"></use>
+          </svg></a>
+        </li>
+      </ul>
+    </address>
+     
+  </div>
+<!--icon-close icon-burger icon-facebook icon-instagram icon-youTube -->
+ 
+  <div class="mobile-menu ">
+    <div class="modal-menu">
+          <button type="button" class="modal-button-closewndw">
+            <svg height="20" width="20" class="modal-button-closewndw-svg">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>  
+
+          <nav class="menu-nav">
+          <ul class="menu-list">
+        <li class="menu-list-item"><a href="./index.html" class="item">Home </a></li>
+        <li class="menu-list-item"><a href="#about-us" class="item">About Us</a></li>
+        <li class="menu-list-item"><a href="#catalog" class="item">Catalog</a></li>
+        <li class="menu-list-item"><a href="#sale" class="item">Sale</a></li>
+        <li class="menu-list-item"><a href="#reviews" class="item">Reviews</a></li>
+        <li class="menu-list-item">
+          <a href="#contact-us" class="item">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+    <address class="address">
+
+
+      <ul class="menu-address">
+        <li class="menu-address-item"><a  href="https://www.facebook.com/goITclub/" class="menu-link"><svg height="18" width="18" class="header-sprite"></svg>
+            <use href="/bestteam/assets/sprite-Bjw56faa.svg#icon-facebook"></use>
+          </svg></a>
+        </li>
+        <li class="menu-address-item">
+          <a href="https://www.instagram.com/goitclub/" class="menu-link"><svg height="18" width="18" class="header-sprite"></svg>
+            <use href="/bestteam/assets/sprite-Bjw56faa.svg#icon-instagram"></use>
+          </svg></a>
+        </li>
+        <li class="menu-address-item">
+          <a href="https://www.youtube.com/c/GoIT" class="menu-link"><svg height="18" width="18" class="header-sprite"></svg>
+            <use href="/bestteam/assets/sprite-Bjw56faa.svg#icon-youTube"></use>
+          </svg></a>
+        </li>
+      </ul>
+    </address>
+
+    </div>
+  </div>
+
+</header>
+
+    <main>
+      
+<section class="hero">
     <div class="container">
         <div class="hero-container">
             <div class="hero-box-text">
@@ -49,7 +148,8 @@
         </picture>
     </div>
 </section>
-    <section id="about-us">
+
+      <section id="about-us">
   <div class="container-about-us">
     <div class="about-us">
       <h2 class="title-about-us">About Us</h2>
@@ -92,7 +192,7 @@
   </div>
 </section>
 
-    <section class="catalog" id="catalog">
+      <section class="catalog" id="catalog">
     <div class="container">
         <h2 class="catalog-title">Catalog</h2>
         <ul class="catalog-list">
@@ -193,7 +293,7 @@
         <button class="catalog-show-more-btn" type="button">Show more</button>
     </div>
 </section>
-    <section class="ad-section container">
+      <section class="ad-section container">
   <div class="ad-container">
     <h2 class="visually-hidden">Advertisement</h2>
     <p class="ad-text">
@@ -206,7 +306,7 @@
   </div>
 </section>
 
-    <section class="sale" id="sale">
+      <section class="sale" id="sale">
   <div class="container">
     <h2 class="sale-title">Sale</h2>
     <div class="sale-wrapper">
@@ -317,7 +417,7 @@
     </div>
   </div>
 </section>
-    <section class="reviews">
+      <section class="reviews">
   <div class="container reviews-container">
     <h2 class="section-title">Reviews</h2>
     <div class="review-card">
@@ -406,10 +506,8 @@
   </div>
 </section>
 
+      
+    </main>
     
-  </main>
-  
-
-</body>
-
+  </body>
 </html>
