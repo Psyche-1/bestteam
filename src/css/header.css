@@ -1,8 +1,16 @@
 .header {
     border-bottom: 1px solid rgba(12, 12, 12, 0.1);
+    padding: 20px 0;
+}
+
+.header-container.container
+{
+    padding: 0 20px;
+    
 }
 
 .nav {
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -76,7 +84,7 @@
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-& .modal-button-closewndw-svg
+.modal-button-closewndw-svg
 {
     stroke: white;
 }
@@ -119,12 +127,12 @@
     align-items: center;
     justify-content: center;
 }
-.modal-button-closewndw .modal-button-closewndw-svg {
+.modal-button-closewndw-svg {
     stroke: #fff;
-    fill: #fff;
     width: 34px;
     height: 34px;
 }
+
 .menu-address-item>a
 {
 transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -133,7 +141,7 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 {
  fill: white;
 }
-.burger-button {
+.burger-button  {
     stroke: #0c0c0c;
     fill: #0c0c0c;
     width: 34px;
@@ -173,15 +181,21 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     .modal-button-closewndw .modal-button-closewndw-svg
     {
         width: 40px;
-            height: 40px;
+        height: 40px;
     }
 .burger-button {
     width: 40px;
     height: 40px;
 }
+.header {
+    border-bottom: 1px solid rgba(12, 12, 12, 0.1);
+    padding: 26px 0;
+}
+
+
     .header-container {
         width: 1151px;
-        padding: 26px 32px;
+        padding: 0 32px;
     }
 
     .modal-menu {
@@ -205,7 +219,7 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     .header-container {
         max-width: 1151px;
-        padding: 26px 64.5px;
+        padding: 0 64.5px;
         display: flex;
         align-items: center;
     }
@@ -260,6 +274,7 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .header-sprite {
+        fill: lightgray;
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
