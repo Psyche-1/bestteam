@@ -82,10 +82,7 @@ background: linear-gradient(rgba(12, 12, 12, 0.92), rgba(12, 12, 12, 0.92)), url
     padding-bottom: 10px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-button-closewndw-svg path
-{
-    stroke: white;
-}
+
 .menu-list-item:first-child:active::after
 {
             content: '';
