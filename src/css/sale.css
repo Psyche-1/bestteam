@@ -1,7 +1,3 @@
-.sale {
-  margin-bottom: 60px;
-}
-
 .sale-title {
   font-weight: 600;
   font-size: 32px;
@@ -145,10 +141,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .sale {
-    margin-bottom: 80px;
-  }
-
   .sale-title {
     font-size: 48px;
     margin-bottom: 40px;
@@ -225,10 +217,6 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .sale {
-    margin-bottom: 100px;
-  }
-
   .sale-wrapper {
     flex-direction: row;
     flex-wrap: nowrap;
