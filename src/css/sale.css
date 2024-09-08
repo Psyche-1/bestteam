@@ -145,11 +145,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding: 0 32px;
-  }
-
   .sale {
     margin-bottom: 80px;
   }
@@ -230,11 +225,6 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-    padding: 0 65px;
-  }
-
   .sale {
     margin-bottom: 100px;
   }
@@ -258,9 +248,11 @@
   .sale-box {
     width: 530px;
   }
+
   .sale-price-box {
     margin-bottom: 30px;
   }
+
   .sale-box-inner {
     margin-bottom: 20px;
   }
