@@ -15,6 +15,11 @@
     align-items: center;
     justify-content: space-between;
 }
+.button-burger
+{
+    border: none;
+    background-color: transparent;
+}
 .burger-button
 {
     width: 34px;
@@ -25,7 +30,7 @@
     position: fixed;
     top: 0;
     right: 0;
-    width: 100%;
+    width: 200px;
     height: 100%;
 background: linear-gradient(rgba(12, 12, 12, 0.92), rgba(12, 12, 12, 0.92)), url("../images/about-us/about-us-mob-2x.jpg");
     background-position: center;
@@ -50,6 +55,7 @@ background: linear-gradient(rgba(12, 12, 12, 0.92), rgba(12, 12, 12, 0.92)), url
         align-items: center;
         justify-content: space-between;
         height: 100vh;
+        
 
 }
 .modal-button-closewndw
@@ -76,25 +82,44 @@ background: linear-gradient(rgba(12, 12, 12, 0.92), rgba(12, 12, 12, 0.92)), url
             color: #fbfbfb;
             margin-top: 220px;
 }
-.menu-list-item:first-child
-{
+.menu-list-item {
     position: relative;
     padding-bottom: 10px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu-list-item:first-child:active::after
-{
-            content: '';
-            position: absolute;
-            left: 40%;
-            bottom:1px;
-            width: 8px;
-            height: 8px;
-            background-color: #3350E9;
-            border-radius: 50%;
-            margin-top: 5px; 
+.menu-list-item .item {
+    position: relative;
+    display: inline-block;
+    
 }
+ 
+.menu-list-item:first-child .item::after {
+    content: '';
+    position: absolute;
+    left: 40%;
+    bottom: -8px;
+    width: 8px;
+    height: 8px;
+    background-color: #3350E9;
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-list-item .item:active::after,
+.menu-list-item .item:focus::after {
+    content: '';
+    position: absolute;
+    left: 40%;
+    bottom: -8px;
+    width: 8px;
+    height: 8px;
+    background-color: #3350E9;
+    border-radius: 50%;
+}
+
+
+
+
 .menu-address
 {
     display: flex;
@@ -122,11 +147,16 @@ background: linear-gradient(rgba(12, 12, 12, 0.92), rgba(12, 12, 12, 0.92)), url
     align-items: center;
     justify-content: center;
 }
-.modal-button-closewndw .modal-button-closewndw-svg {
+.modal-button-closewndw svg {
     stroke: #fff;
-    fill: #fff;
     width: 34px;
     height: 34px;
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+   }
+
+.modal-button-closewndw:hover svg {
+    stroke: #e0e0e0;
 }
 
 .menu-address-item>a
@@ -143,7 +173,12 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     width: 34px;
     height: 34px;
 }
-
+.logo {
+    font-weight: 500;
+        font-size: 16px;
+        letter-spacing: -0.02em;
+        color: #0c0c0c;
+}
 
 @media screen and (max-width: 767px) {
 
@@ -155,18 +190,28 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   
+    .logo
+    {
+        font-weight: 500;
+            font-size: 20px;
+            letter-spacing: -0.02em;
+            color: #0c0c0c;
+    }
     .modal-button-closewndw .modal-button-closewndw-svg
     {
         width: 40px;
         height: 40px;
     }
+        .mobile-menu
+        {
+            width: 330px;
+        }
 .burger-button {
     width: 40px;
     height: 40px;
 }
 .header {
     border-bottom: 1px solid rgba(12, 12, 12, 0.1);
-    padding: 26px 0;
 }
 
 
@@ -196,7 +241,6 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     .header-container {
         max-width: 1151px;
-        padding: 0 65px;
         display: flex;
         align-items: center;
     }
@@ -206,11 +250,12 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .logo {
+        font-family: "Gilroy", sans-serif;
         font-weight: 500;
-        font-size: 20px;
-        letter-spacing: -0.02em;
-        color: #0c0c0c;
-        margin-right: 203px;
+            font-size: 20px;
+            letter-spacing: -0.02em;
+            color: #0c0c0c;
+            margin-right: 203px;
     }
 
     .nav {
@@ -222,6 +267,7 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         display: flex;
         width: 505px;
         gap: 40px;
+        align-items: center;
     }
 
     .nav-list-item {
@@ -245,14 +291,11 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         height: 36px;
     }
 
-    .nav-item:first-child {
-        position: relative;
-        padding-bottom: 10px;
-    }
+        
 
-    .header-sprite {
-        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
+        .address-link svg {
+            transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
 .address-link:hover svg use,
 .address-link:focus svg use,
 .address-link:active svg use {
@@ -269,19 +312,45 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
                 .menu-link:focus svg {
                     fill: #fff;
                 }
-    .nav-item:first-child:active::after {
-        content: '';
-        position: absolute;
-        left: 40%;
-        bottom: -1px;
-        width: 8px;
-        height: 8px;
-        background-color: #3350E9;
-        border-radius: 50%;
-        margin-top: 5px;
-    }
 
+ .nav-list {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
 
+.nav-item {
+    position: relative;
+}
+.nav-item:first-child::after {
+    content: '';
+    position: absolute;
+    left: 40%;
+    bottom: -8px;
+    width: 8px;
+    height: 8px;
+    background-color: #3350E9;
+    border-radius: 50%;
+    margin-top: 5px;
+}
+.nav-list-item::after
+{
+transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-item .nav-list-item:focus::after,
+.nav-item .nav-list-item:active::after {
+    content: '';
+    position: absolute;
+    left: 40%;
+    bottom: -8px;
+    width: 8px;
+    height: 8px;
+    background-color: #3350E9;
+    border-radius: 50%;
+    margin-top: 5px;
+}
 
 }
 
