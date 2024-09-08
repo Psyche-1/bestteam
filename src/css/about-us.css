@@ -67,10 +67,12 @@
 .btn-catalog:hover {
     background-color: #1F3CD4;
 }
+
 .watch-img {
 
     border-radius: 30px;
-    background-color: rgba(12, 12, 12, 0.2), url("../images/about-us/about-us-mob-1x.jpg"), url("..git add/images/about-us/about-us-mob-2x.jpg"); ;
+    background-color: rgba(12, 12, 12, 0.2), url("../images/about-us/about-us-mob-1x.jpg"), url("..git add/images/about-us/about-us-mob-2x.jpg");
+    ;
 }
 
 @media screen and (min-width: 768px) {
@@ -78,7 +80,6 @@
         gap: 40px;
         padding: 0px 32px;
         max-width: 768px;
-        margin-bottom: 80px;
     }
 
     .about-us {
@@ -112,7 +113,6 @@
         gap: 40px;
         padding: 0px 65px;
         max-width: 1280px;
-        margin-bottom: 80px;
     }
 
     .about-us {
