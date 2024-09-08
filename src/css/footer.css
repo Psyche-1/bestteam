@@ -357,6 +357,7 @@ ul {
         justify-content: flex-start;
         gap: 19px;
         width: 100%;
+        white-space: nowrap;
     }
 
     .footer-nav-item {
@@ -377,6 +378,7 @@ ul {
     .footer-legal {
         flex-direction: row;
         gap: 159px;
+        white-space: nowrap;
     }
 
     .footer-legal-one {
