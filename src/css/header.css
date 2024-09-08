@@ -106,7 +106,8 @@ background: linear-gradient(rgba(12, 12, 12, 0.92), rgba(12, 12, 12, 0.92)), url
 }
 
 .menu-list-item .item:active::after,
-.menu-list-item .item:focus::after {
+.menu-list-item .item:focus::after,
+.menu-list-item .item:hover::after {
     content: '';
     position: absolute;
     left: 40%;
