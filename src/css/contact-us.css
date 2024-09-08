@@ -27,7 +27,7 @@
 .form_cont {
   display: flex;
   flex-direction: column;
-  padding: 28px 48px;
+  padding: 48px 28px;
   border-radius: 30px;
   background-color: #f3f3f3;
   justify-content: space-between;
@@ -139,6 +139,7 @@
 
   .form_cont {
     border-radius: 50px;
+    padding: 50px 122px;
   }
 }
 
@@ -149,8 +150,6 @@
     padding-right: 65px;
   }
 
-
-
   .sec_cont_us_cont {
     flex-direction: row;
     gap: 40px;
@@ -158,6 +157,7 @@
 
   .form_cont {
     width: calc((100% - 40px) / 2);
+    padding: 50px 60px;
   }
 
   .cont_us_form_text {
@@ -168,6 +168,4 @@
   .pict_cont_us {
     width: calc((100% - 40px) / 2);
   }
-
-
 }
