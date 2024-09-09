@@ -1,5 +1,4 @@
 .container-about-us {
-    padding: 0px 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -8,8 +7,6 @@
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-
-    padding-bottom: 60px;
 }
 
 .about-us {
@@ -78,7 +75,6 @@
 @media screen and (min-width: 768px) {
     .container-about-us {
         gap: 40px;
-        padding: 0px 32px;
         max-width: 768px;
     }
 
@@ -111,7 +107,6 @@
     .container-about-us {
         flex-direction: row;
         gap: 40px;
-        padding: 0px 65px;
         max-width: 1280px;
     }
 
