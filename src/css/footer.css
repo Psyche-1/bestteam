@@ -332,7 +332,8 @@
     .footer-nav {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 28px;
+        padding-bottom: 28px;
+        border-bottom: rgba(251, 251, 251, 0.1);
     }
 
     .footer-nav-menu {
