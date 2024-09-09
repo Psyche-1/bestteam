@@ -1,18 +1,3 @@
-body {
-    font-family: "Gilroy", sans-serif;
-}
-
-h3,
-p {
-    margin: 0;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
 .footer {
     background-color: #1b1b1b;
     color: #fff;
